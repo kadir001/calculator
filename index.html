@@ -8,27 +8,26 @@
 <body>
   <div id="root"></div>
 
-  <!-- React and ReactDOM -->
-  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <!-- React and ReactDOM (UMD builds) -->
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
 
-  <!-- Babel (to compile JSX in browser) -->
+  <!-- Babel (for JSX support in browser) -->
   <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
 
-  <!-- Your React JSX Code -->
+  <!-- React App Code -->
   <script type="text/babel">
     function App() {
       return (
         <div>
           <h1>Hello, React with JSX!</h1>
-          <p>This app runs fully in the browser using CDN + Babel.</p>
+          <p>This is rendered using Babel in the browser.</p>
         </div>
       );
     }
 
-    const rootElement = document.getElementById('root');
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(<App />);
+    const rootElement = document.getElementById("root");
+    ReactDOM.render(<App />, rootElement); // ✅ Using render, not createRoot
   </script>
 </body>
 </html>

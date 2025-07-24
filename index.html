@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>React App</title>
+  <title>React App with JSX</title>
 </head>
 <body>
   <div id="root"></div>
@@ -12,18 +12,23 @@
   <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
 
-  <!-- Your React code -->
-  <script type="text/javascript">
-    const e = React.createElement;
+  <!-- Babel (to compile JSX in browser) -->
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
 
+  <!-- Your React JSX Code -->
+  <script type="text/babel">
     function App() {
-      return e('h1', null, 'Hello, React on GitHub!');
+      return (
+        <div>
+          <h1>Hello, React with JSX!</h1>
+          <p>This app runs fully in the browser using CDN + Babel.</p>
+        </div>
+      );
     }
 
     const rootElement = document.getElementById('root');
     const root = ReactDOM.createRoot(rootElement);
-    root.render(e(App));
+    root.render(<App />);
   </script>
 </body>
 </html>
-

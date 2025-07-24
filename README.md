@@ -5,8 +5,8 @@ A simple calculator app built using **React 18**, **JSX**, and **Babel** — no 
 ---
 
 ## 📸 Screenshot
-
-<img src="./calculator.png" alt="React Calculator Screenshot" width="400" />
+<a href="kadir001.github.io/calculator/">CLICK HERE</a>
+<a href="kadir001.github.io/calculator/"><img src="./calculator.png" alt="React Calculator Screenshot" width="400" /></a>
 
 ---
 

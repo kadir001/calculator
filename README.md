@@ -3,9 +3,10 @@
 A simple calculator app built using **React 18**, **JSX**, and **Babel** — no build tools or installations required. This app runs 100% in the browser using CDNs, making it perfect for learning or small-scale demos.
 
 ---
+kadir001.github.io/calculator/
 
 ## 📸 Screenshot
-<a href="kadir001.github.io/calculator/">CLICK HERE</a>
+
 <a href="kadir001.github.io/calculator/"><img src="./calculator.png" alt="React Calculator Screenshot" width="400" /></a>
 
 ---

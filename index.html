@@ -4,7 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>React Calculator</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f4f4f9;
+}
+
+.calculator {
+  width: 300px;
+   
+  background: #fff;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.outputscreen {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: right;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(-60deg, #76bef7, #56a6d1);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5aa7df;
+}
+
+#clear {
+  background: linear-gradient(-60deg, #ff6a6a, #d13434);
+}
+
+#clear:hover {
+  background: #d13434;
+}
+
+  </style>
 </head>
 <body>
   <div id="root"></div>

@@ -4,18 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>React App</title>
-  <link href="style.css">
 </head>
 <body>
-  
-  <div id="root"> </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js">
-  </script>
- 
+  <div id="root"></div>
 
-    <script src="script.js"></script>
- 
+  <!-- React and ReactDOM -->
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+
+  <!-- Your React code -->
+  <script type="text/javascript">
+    const e = React.createElement;
+
+    function App() {
+      return e('h1', null, 'Hello, React on GitHub!');
+    }
+
+    const rootElement = document.getElementById('root');
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(e(App));
+  </script>
 </body>
 </html>
+
